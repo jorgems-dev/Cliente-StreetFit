@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/modo_osucro" />
+    <foreground android:drawable="@drawable/logoappsinfondo" />
+    <monochrome android:drawable="@drawable/logoappsinfondo" />
+</adaptive-icon>

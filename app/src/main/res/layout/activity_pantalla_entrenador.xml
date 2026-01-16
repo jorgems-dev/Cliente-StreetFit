@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/modo_osucro"
+        tools:context=".PantallaEntrenador">
+
+        <View
+            android:id="@+id/barraSeparadora7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPreguntaE"
+            app:layout_constraintWidth_percent="0.40" />
+
+        <TextView
+            android:id="@+id/textPreguntaE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:text="¿Qué quieres hacer hoy? "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBienvenidaEntrenador" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerAtletas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/custom_btn_selected_type2"
+            android:gravity="center"
+            android:maxWidth="400dp"
+            android:minWidth="350dp"
+            android:text="Ver ateltas disponibles"
+            android:textColor="@drawable/text_btn_selected_type1"
+            app:backgroundTint="@null"
+            app:icon="@drawable/icono_asociar_rutina_24"
+            app:iconGravity="textStart"
+            app:iconSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barraSeparadora7"
+            app:layout_constraintWidth_percent="0.90" />
+
+        <TextView
+            android:id="@+id/textBienvenidaEntrenador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:text="Bienvenido "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgTituloAppEntrenador" />
+
+        <ImageView
+            android:id="@+id/imgTituloAppEntrenador"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:srcCompat="@drawable/titulologo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCrearRutinaEntrenadores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/custom_btn_selected_type1"
+            android:gravity="center"
+            android:maxWidth="400dp"
+            android:minWidth="350dp"
+            android:text="Crear rutina de ejercicios"
+            android:textColor="@drawable/text_btn_selected_type1"
+            app:backgroundTint="@null"
+            app:icon="@drawable/baseline_rutina24"
+            app:iconGravity="textStart"
+            app:iconSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVerAtletas"
+            app:layout_constraintWidth_percent="0.90" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerRutinasEntrenadores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/custom_btn_selected_type1"
+            android:gravity="center"
+            android:maxWidth="400dp"
+            android:minWidth="350dp"
+            android:text="Ver rutinas personales"
+            android:textColor="@drawable/text_btn_selected_type1"
+            app:backgroundTint="@null"
+            app:icon="@drawable/baseline_rutinas_24"
+            app:iconGravity="textStart"
+            app:iconSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCrearRutinaEntrenadores"
+            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintWidth_percent="0.90" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
